@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>易果网</title>
+	<link rel="stylesheet" href="yiguo.css">
+	<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+	<link rel="shortcut icon" href="icon.ico">
+</head>
+<body>
+	<!-- 最顶部导航栏 -->
+	<div class="top_nav w">
+		<div class="inner_top_nav">
+			<ul class="top_left">
+				<p style='line-height:29px'>欢迎光临易果生鲜</p>
+				<p>配送至 : <a href="./fangdajing.html" class='more' id='more'>北京<i class="i1"></i></a>
+					<div class="moredd disnone" id="moredd">
+						<div class="moredd1">
+							<input type="text" placeholder="请输入城市名称">
+						</div>
+						<div class="moredd2">
+							<ul class='ls'>
+								<li class="one"><a href="./fangdajing.html">直辖市</a></li>
+								<li><a href="./fangdajing.html">北京</a></li>
+								<li><a href="./fangdajing.html">上海</a></li>
+								<li><a href="./fangdajing.html">天津</a></li>
+								<li><a href="./fangdajing.html">重庆</a></li>
+							</ul>
+						</div>
+						<div class="moredd3">
+							<ol>
+								<li class="border2">
+									<dl>
+										<dt class="one">自治</dt>
+										<dd><a href="./fangdajing.html">西藏</a></dd>
+										<dd><a href="./fangdajing.html">新疆</a></dd>
+										<dd><a href="./fangdajing.html">内蒙</a></dd>
+										<dd><a href="./fangdajing.html">宁夏</a></dd>
+										<dd><a href="./fangdajing.html">广西</a></dd>
+									</dl>
+								</li>
+								<li>
+									<dl>
+										<dt class='one'>港澳</dt>
+										<dd><a href="./fangdajing.html">香港</a></dd>
+										<dd><a href="./fangdajing.html">澳门</a></dd>
+										<dd><a href="./fangdajing.html">台湾</a></dd>
+									</dl>
+								</li>
+								<li>
+									<dl>
+										<dt class='one'>大陆</dt>
+										<dd><a href="./fangdajing.html">黑龙江</a></dd>
+										<dd><a href="./fangdajing.html">吉林</a></dd>
+										<dd><a href="./fangdajing.html">辽宁</a></dd>
+										<dd><a href="./fangdajing.html">青海</a></dd>
+										<dd><a href="./fangdajing.html">云南</a></dd>
+										<dd><a href="./fangdajing.html">贵州</a></dd>
+										<dd><a href="./fangdajing.html">四川</a></dd>
+										<dd><a href="./fangdajing.html">河南</a></dd>
+										<dd><a href="./fangdajing.html">河北</a></dd>
+										<dd><a href="./fangdajing.html">山东</a></dd>
+										<dd><a href="./fangdajing.html">山西</a></dd>
+										<dd><a href="./fangdajing.html">陕西</a></dd>
+										<dd><a href="./fangdajing.html">甘肃</a></dd>
+										<dd><a href="./fangdajing.html">湖北</a></dd>
+										<dd><a href="./fangdajing.html">湖南</a></dd>
+										<dd><a href="./fangdajing.html">浙江</a></dd>
+										<dd><a href="./fangdajing.html">海南</a></dd>
+										<dd><a href="./fangdajing.html">广东</a></dd>
+										<dd><a href="./fangdajing.html">江苏</a></dd>
+										<dd><a href="./fangdajing.html">江西</a></dd>
+										<dd><a href="./fangdajing.html">福建</a></dd>
+										<dd><a href="./fangdajing.html">安徽</a></dd>
+									</dl>
+								</li>
+							</ol>
+						</div>
+					</div>
+				</p>
+			</ul>
+			<ul class='top_right'>
+				<li><a href="./zhuce.html">[登录]</a></li>
+				<li><a href="./zhuce.html">[注册]</a></li>
+				<li><a href="./fangdajing.html" class='wdyg'><i class="i2"></i>我的易果<i class='i1'></i></a>
+					<div class='myyiguo disnone'>
+						<p>我的订单</p>
+						<p>我的优惠券</p>
+						<p>我的收藏</p>
+						<p>我的果币</p>
+						<p>我的退换货</p>
+						<p>预存款查询</p>
+						<p>立即充值</p>
+					</div>
+				</li>
+				<li><i class='i3'></i><a href="./fangdajing.html" class='sjyg'>手机易果<i class='i1'></i></a>
+					<div class="shoujiyiguo">
+						<img src="img/xiazai.jpg" alt="" width="126px" height="126px">下载app
+						<img src="img/weixin.jpg" alt="">微信公众号
+					</div>
+				</li>
+				<li><a href="./fangdajing.html"><i class='i4'></i>储值卡</a></li>
+				<li><a href="./fangdajing.html"><i class="i5"></i>手机礼品兑换券入口</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="fixed" id='fixed'>
+		<div class="wrap">
+			<a href="./fangdajing.html" class='logo'>
+			</a>
+			<div class="search">
+				<input type="text" class='search_input' placeholder="输入商品名/编号/拼音">
+				<input type="button" class="search_btn" value='搜索'>
+			</div>
+			<div class="shopping_car">
+				<img src="./img/shopping_car.png" alt="">
+				<div class="car_inner">
+					<img src="./img/car_none.png" alt="">
+				</div>
+			</div>
+		</div>
+	</div>
+<!-- 轮播和菜单 -->
+	<div class="header_nav">
+		<div class="spfl">
+			<div class='all'><a href="./fangdajing.html">全部商品分类▼</a></div>
+			<div class='li1 list'>
+				<a href="./fangdajing.html"><i class='i_1'></i>进口水果</a>
+				<div class="li1_none none">
+					<h4><a href="./fangdajing.html">进口水果</a></h4>
+					<div id="sub_list">
+						<a href="./fangdajing.html">奇异果</a>
+						<a href="./fangdajing.html">李</a>
+						<a href="./fangdajing.html">梅</a>
+						<a href="./fangdajing.html">牛油果</a>
+						<a href="./fangdajing.html">提子</a>
+						<a href="./fangdajing.html">苹果</a>
+						<a href="./fangdajing.html">梨</a>
+						<a href="./fangdajing.html">柑橘橙柚</a>
+						<a href="./fangdajing.html">香蕉</a>
+						<a href="./fangdajing.html">火龙果</a>
+						<a href="./fangdajing.html">椰子</a>
+						<a href="./fangdajing.html">芒果</a>
+						<a href="./fangdajing.html">凤梨</a>
+						<a href="./fangdajing.html">榴莲</a>
+					</div>
+					<div class="list_img">
+						<a href="./fangdajing.html" class='imga'>
+							<img src="./img/list/li1.png" alt="">
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class='li2 list'>
+				<a href="./fangdajing.html"><i class='i_2'></i>国产水果</a>
+				<div class="li2_none none">
+					<h4><a href="./fangdajing.html">进口水果</a></h4>
+					<div id="sub_list">
+						<a href="./fangdajing.html">奇异果</a>
+						<a href="./fangdajing.html">李</a>
+						<a href="./fangdajing.html">梅</a>
+						<a href="./fangdajing.html">牛油果</a>
+						<a href="./fangdajing.html">提子</a>
+						<a href="./fangdajing.html">苹果</a>
+						<a href="./fangdajing.html">梨</a>
+						<a href="./fangdajing.html">柑橘橙柚</a>
+						<a href="./fangdajing.html">香蕉</a>
+						<a href="./fangdajing.html">火龙果</a>
+						<a href="./fangdajing.html">椰子</a>
+						<a href="./fangdajing.html">芒果</a>
+						<a href="./fangdajing.html">凤梨</a>
+						<a href="./fangdajing.html">榴莲</a>
+					</div>
+					<div class="list_img">
+						<a href="./fangdajing.html" class='imga'>
+							<img src="./img/list/li2.png" alt="">
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class='li3 list'>
+				<a href="./fangdajing.html"><i class='i_3'></i>精选肉类</a>
+				<div class="li3_none none">
+					<h4><a href="./fangdajing.html">牛排</a></h4>
+					<div id="sub_list">
+						<a href="./fangdajing.html">冰鲜肉</a>
+						<a href="./fangdajing.html">进口牛肉</a>
+						<a href="./fangdajing.html">国产牛肉</a>
+						<a href="./fangdajing.html">猪肉</a>
+						<a href="./fangdajing.html">羊肉</a>
+						<a href="./fangdajing.html">香肠</a>
+						<a href="./fangdajing.html">火腿</a>
+						<a href="./fangdajing.html">培根</a>
+						<a href="./fangdajing.html">肉制品</a>
+						<a href="./fangdajing.html">进口鹿肉</a>
+					</div>
+					<div class="list_img">
+						<a href="./fangdajing.html" class='imga'>
+							<img src="./img/list/li3.png" alt="">
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class='li4 list'>
+				<a href="./fangdajing.html"><i class='i_4'></i>禽类蛋品</a>
+				<div class="li4_none li_none">
+					<h4><a href="./fangdajing.html">鸡</a></h4>
+					<div id="sub_list">
+						<a href="./fangdajing.html">鸭</a>
+						<a href="./fangdajing.html">鹅</a>
+						<a href="./fangdajing.html">鸽</a>
+						<a href="./fangdajing.html">鹌鹑</a>
+						<a href="./fangdajing.html">特色禽类</a>
+						<a href="./fangdajing.html">蛋</a>
+					</div>
+					<div class="list_img">
+						<a href="./fangdajing.html" class='imga'>
+							<img src="./img/list/li4.png" alt="">
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class='li5 list'>
+				<a href="./fangdajing.html"><i class='i_5'></i>即烹美食</a>
+				<div class="li5_none none">
+					<h4><a href="./fangdajing.html">独家秘制</a></h4>
+					<div id="sub_list">
+						<a href="./fangdajing.html">生猛海鲜</a>
+						<a href="./fangdajing.html">日韩料理</a>
+						<a href="./fangdajing.html">经典主菜</a>
+						<a href="./fangdajing.html">中华美食</a>
+						<a href="./fangdajing.html">精致西餐</a>
+						<a href="./fangdajing.html">开胃小菜</a>
+						<a href="./fangdajing.html">东南亚风味</a>
+						<a href="./fangdajing.html">田园时蔬</a>
+					</div>
+					<div class="list_img">
+						<a href="./fangdajing.html" class='imga'>
+							<img src="./img/list/li5.png" alt="">
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class='li6 list'>
+				<a href="./fangdajing.html"><i class='i_6'></i>海鲜水产</a>
+				<div class="li6_none none">
+					<h4><a href="./fangdajing.html">银鳕鱼</a></h4>
+					<div id="sub_list">
+						<a href="./fangdajing.html">虾仁</a>
+						<a href="./fangdajing.html">鱼</a>
+						<a href="./fangdajing.html">三文鱼</a>
+						<a href="./fangdajing.html">虾类</a>
+						<a href="./fangdajing.html">蟹类</a>
+						<a href="./fangdajing.html">贝类</a>
+						<a href="./fangdajing.html">活鲜</a>
+						<a href="./fangdajing.html">海产干货</a>
+						<a href="./fangdajing.html">特色海产</a>
+					</div>
+					<div class="list_img">
+						<a href="./fangdajing.html" class='imga'>
+							<img src="./img/list/li6.png" alt="">
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class='li7 list'>
+				<a href="./fangdajing.html"><i class='i_7'></i>乳品糕点</a>
+				<div class="li7_none none">
+					<h4><a href="./fangdajing.html">鲜奶</a></h4>
+					<div id="sub_list">
+						<a href="./fangdajing.html">奶酪</a>
+						<a href="./fangdajing.html">黄油</a>
+						<a href="./fangdajing.html">奶油</a>
+						<a href="./fangdajing.html">酸奶</a>
+						<a href="./fangdajing.html">乳酸饮料</a>
+						<a href="./fangdajing.html">牛奶</a>
+						<a href="./fangdajing.html">面包</a>
+						<a href="./fangdajing.html">蛋糕</a>
+						<a href="./fangdajing.html">甜点</a>
+						<a href="./fangdajing.html">月饼</a>
+						<a href="./fangdajing.html">冰淇淋</a>
+					</div>
+					<div class="list_img">
+						<a href="./fangdajing.html" class='imga'>
+							<img src="./img/list/li7.png" alt="">
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class='li8 list'>
+				<a href="./fangdajing.html"><i class='i_8'></i>新鲜蔬菜</a>
+				<div class="li8_none none">
+					<h4><a href="./fangdajing.html">叶菜类</a></h4>
+					<div id="sub_list">
+						<a href="./fangdajing.html">根茎类</a>
+						<a href="./fangdajing.html">茄果类</a>
+						<a href="./fangdajing.html">瓜果类</a>
+						<a href="./fangdajing.html">花菜类</a>
+						<a href="./fangdajing.html">豆类</a>
+						<a href="./fangdajing.html">香料</a>
+						<a href="./fangdajing.html">菌菇</a>
+						<a href="./fangdajing.html">沙拉菜</a>
+						<a href="./fangdajing.html">冷冻蔬菜</a>
+						<a href="./fangdajing.html">豆制品</a>
+						<a href="./fangdajing.html">葱蒜类</a>
+						<a href="./fangdajing.html">蔬菜组合</a>
+						<a href="./fangdajing.html">净菜类</a>
+					</div>
+					<div class="list_img">
+						<a href="./fangdajing.html" class='imga'>
+							<img src="./img/list/li8.png" alt="">
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class='li9 list'>
+				<a href="./fangdajing.html"><i class='i_9'></i>方便速食</a>
+				<div class="li9_none none">
+					<h4><a href="./fangdajing.html">养生汤品</a></h4>
+					<div id="sub_list">
+						<a href="./fangdajing.html">冷冻点心</a>
+						<a href="./fangdajing.html">西式主食</a>
+						<a href="./fangdajing.html">中式主食</a>
+						<a href="./fangdajing.html">火锅料</a>
+						<a href="./fangdajing.html">熟食</a>
+						<a href="./fangdajing.html">半成品菜</a>
+						<a href="./fangdajing.html">易盒家宴</a>
+					</div>
+					<div class="list_img">
+						<a href="./fangdajing.html" class='imga'>
+							<img src="./img/list/li9.png" alt="">
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class='li10 list'>
+				<a href="./fangdajing.html"><i class='i_10'></i>粮油杂货</a>
+				<div class="li10_none none">
+					<h4><a href="./fangdajing.html">米</a></h4>
+					<div id="sub_list">
+						<a href="./fangdajing.html">杂粮</a>
+						<a href="./fangdajing.html">面</a>
+						<a href="./fangdajing.html">面制品</a>
+						<a href="./fangdajing.html">油</a>
+						<a href="./fangdajing.html">调味料</a>
+						<a href="./fangdajing.html">干货</a>
+						<a href="./fangdajing.html">果干</a>
+						<a href="./fangdajing.html">零食</a>
+					</div>
+					<div class="list_img">
+						<a href="./fangdajing.html" class='imga'>
+							<img src="./img/list/li10.png" alt="">
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class='li11 list'>
+				<a href="./fangdajing.html"><i class='i_11'></i>饮料酒水</a>
+				<div class="li11_none none">
+					<h4><a href="./fangdajing.html">水</a></h4>
+					<div id="sub_list">
+						<a href="./fangdajing.html">果汁</a>
+						<a href="./fangdajing.html">饮料</a>
+						<a href="./fangdajing.html">冲调饮品</a>
+						<a href="./fangdajing.html">葡萄酒</a>
+						<a href="./fangdajing.html">酒具</a>
+						<a href="./fangdajing.html">啤酒</a>
+					</div>
+					<div class="list_img">
+						<a href="./fangdajing.html" class='imga'>
+							<img src="./img/list/li11.png" alt="">
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="lunbo w">
+		<div class="btn">
+			<a href="./fangdajing.html" class='prev'></a>
+			<a href="./fangdajing.html" class='next'></a>
+		</div>
+	</div>
+	<div class="four">
+		<ul>
+			<li class='fl'><a href="./fangdajing.html"><img src="./img/four1.jpg" alt=""><p><b>新品专区</b>探访源头产地 臻选当令时鲜</p></a> </li>
+			<li class='fl'><a href="./fangdajing.html"><img src="./img/four2.jpg" alt=""><p><b>优质生活</b>美食有态度，生活更有味</p></a> </li>
+			<li class='fl'><a href="./fangdajing.html"><img src="./img/four3.jpg" alt=""><p><b>水果专区</b>全球水果最新鲜速递</p></a> </li>
+			<li class='fl'><a href="./fangdajing.html"><img src="./img/four4.jpg" alt=""><p><b>菜谱专栏</b>大厨私房菜 餐桌新食尚</p></a> </li>
+		</ul>
+	</div>
+	<!-- 楼层引导 -->
+		<div class="floor_guide" id='floor_guide'>
+			<div class="guide_inner">
+				<a href="javascript:;" class='t1 tt1'><em class=' hover'>进口水果</em></a>
+				<a href="javascript:;" class='t2 tt1'><em class=''>国产水果</em></a>
+				<a href="javascript:;" class='t3 tt1'><em class=''>海鲜水产</em></a>
+				<a href="javascript:;" class='t4 tt1'><em class=''>精选肉类</em></a>
+				<a href="javascript:;" class='t5 tt1'><em class=''>禽类蛋品</em></a>
+				<a href="javascript:;" class='t6 tt1'><em class=''>粮油杂货</em></a>
+				<a href="javascript:;" class='t7 tt1'><em class=''>乳品糕点</em></a>
+				<a href="javascript:;" class='t8 tt1'><em class=''>饮料酒水</em></a>
+				<a href="javascript:;" class='t9 tt1'><em class=''>方便速食</em></a>
+			</div>
+		</div>
+	<!-- 商品楼层 -->
+	<div class="floor1 floor" id='fl1'>
+		<div class="floor_title">
+			<h2><a href=""><i>F1</i>进口水果</a></h2>
+			<span class='keyword'>
+				<a href="">进口苹果</a>
+				<a href="">佳沛专区</a>
+				<a href="">泰国鲜果</a>
+			</span>
+		</div>
+		<div class="floor_con">
+			<div class="floor_side">
+				<a href=""><img src="./img/floor/floor1.jpg" alt=""></a>
+			</div>
+			<div class="floor_main">
+				<ul>
+					<li><a href=""><img src="./img/floor/fl1_1.jpg" alt=""></a></li>
+					<li><a href=""><img src="./img/floor/fl1_2.jpg" alt=""></a></li>
+					<li class='wide'><a href=""><img src="./img/floor/fl1_3.jpg" alt=""></a></li>
+					<li class='wide'><a href=""><img src="./img/floor/fl1_4.jpg" alt=""></a></li>
+					<li><a href=""><img src="./img/floor/fl1_5.jpg" alt=""></a></li>
+					<li><a href=""><img src="./img/floor/fl1_6.jpg" alt=""></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="floor1 fl2 floor" id='fl2'>
+		<div class="floor_title">
+			<h2><a href="./fangdajing.html"><i>F2</i>国产水果</a></h2>
+			<span class='keyword'>
+				<a href="./fangdajing.html">芒香四溢</a>
+				<a href="./fangdajing.html">南国风情</a>
+				<a href="./fangdajing.html">精选苹果</a>
+			</span>
+		</div>
+		<div class="floor_con">
+			<div class="floor_side">
+				<a href="./fangdajing.html"><img src="./img/floor/floor2.jpg" alt=""></a>
+			</div>
+			<div class="floor_main">
+				<ul>
+					<li class='wide'><a href="./fangdajing.html"><img src="./img/floor/fl2_4.jpg" alt=""></a></li>
+					<li class='wide'><a href="./fangdajing.html"><img src="./img/floor/fl2_3.jpg" alt=""></a></li>
+					<li><a href="./fangdajing.html"><img src="./img/floor/fl2_1.jpg" alt=""></a></li>
+					<li><a href="./fangdajing.html"><img src="./img/floor/fl2_2.jpg" alt=""></a></li>
+					<li><a href="./fangdajing.html"><img src="./img/floor/fl2_5.jpg" alt=""></a></li>
+					<li><a href="./fangdajing.html"><img src="./img/floor/fl2_6.jpg" alt=""></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="floor1 fl3 floor" id='fl3'>
+		<div class="floor_title">
+			<h2><a href="./fangdajing.html"><i>F3</i>海鲜水产</a></h2>
+			<span class='keyword'>
+				<a href="./fangdajing.html">刺身专区</a>
+				<a href="./fangdajing.html">海鲜水产</a>
+				<a href="./fangdajing.html">海产干货</a>
+			</span>
+		</div>
+		<div class="floor_con">
+			<div class="floor_side">
+				<a href="./fangdajing.html"><img src="./img/floor/floor3.jpg" alt=""></a>
+			</div>
+			<div class="floor_main">
+				<ul>
+					<li><a href="./fangdajing.html"><img src="./img/floor/fl3_1.jpg" alt=""></a></li>
+					<li><a href="./fangdajing.html"><img src="./img/floor/fl3_2.jpg" alt=""></a></li>
+					<li><a href="./fangdajing.html"><img src="./img/floor/fl3_5.jpg" alt=""></a></li>
+					<li><a href="./fangdajing.html"><img src="./img/floor/fl3_6.jpg" alt=""></a></li>
+					<li class='wide'><a href="./fangdajing.html"><img src="./img/floor/fl3_4.jpg" alt=""></a></li>
+					<li class='wide'><a href="./fangdajing.html"><img src="./img/floor/fl3_3.jpg" alt=""></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="floor1 fl4 floor" id='fl4'>
+		<div class="floor_title">
+			<h2><a href="./fangdajing.html"><i>F4</i>精选肉类</a></h2>
+			<span class='keyword'>
+				<a href="./fangdajing.html">欧洲天然猪</a>
+				<a href="./fangdajing.html">澳洲牛肉</a>
+				<a href="./fangdajing.html">肉类制品</a>
+			</span>
+		</div>
+		<div class="floor_con">
+			<div class="floor_side">
+				<a href="./fangdajing.html"><img src="./img/floor/floor4.jpg" alt=""></a>
+			</div>
+			<div class="floor_main">
+				<ul>
+					<li class='wide'><a href="./fangdajing.html"><img src="./img/floor/fl1_3.jpg" alt=""></a></li>
+					<li><a href="./fangdajing.html"><img src="./img/floor/fl4_1.jpg" alt=""></a></li>
+					<li><a href="./fangdajing.html"><img src="./img/floor/fl4_2.jpg" alt=""></a></li>
+					<li><a href="./fangdajing.html"><img src="./img/floor/fl4_5.jpg" alt=""></a></li>
+					<li><a href="./fangdajing.html"><img src="./img/floor/fl4_6.jpg" alt=""></a></li>
+					<li class='wide'><a href="./fangdajing.html"><img src="./img/floor/fl1_4.jpg" alt=""></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="floor1 fl5 floor" id='fl5'>
+		<div class="floor_title">
+			<h2><a href="./fangdajing.html"><i>F5</i>禽类蛋品</a></h2>
+			<span class='keyword'>
+				<a href="./fangdajing.html">原味蒸品</a>
+				<a href="./fangdajing.html">原汁煲汤</a>
+				<a href="./fangdajing.html">禽类分割品</a>
+			</span>
+		</div>
+		<div class="floor_con">
+			<div class="floor_side">
+				<a href="./fangdajing.html"><img src="./img/floor/floor5.jpg" alt=""></a>
+			</div>
+			<div class="floor_main">
+				<ul>
+					<li class='wide'><a href="./fangdajing.html"><img src="./img/floor/fl2_3.jpg" alt=""></a></li>
+					<li class='wide'><a href="./fangdajing.html"><img src="./img/floor/fl2_4.jpg" alt=""></a></li>
+					<li><a href="./fangdajing.html"><img src="./img/floor/fl5_1.jpg" alt=""></a></li>
+					<li><a href="./fangdajing.html"><img src="./img/floor/fl5_2.jpg" alt=""></a></li>
+					<li><a href="./fangdajing.html"><img src="./img/floor/fl5_5.jpg" alt=""></a></li>
+					<li><a href="./fangdajing.html"><img src="./img/floor/fl5_6.jpg" alt=""></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="floor1 fl6 floor" id='fl6'>
+		<div class="floor_title">
+			<h2><a href="./fangdajing.html"><i>F6</i>粮油杂货</a></h2>
+			<span class='keyword'>
+				<a href="./fangdajing.html">休闲零食</a>
+				<a href="./fangdajing.html">健康杂粮</a>
+				<a href="./fangdajing.html">进口食用油</a>
+			</span>
+		</div>
+		<div class="floor_con">
+			<div class="floor_side">
+				<a href="./fangdajing.html"><img src="./img/floor/floor6.jpg" alt=""></a>
+			</div>
+			<div class="floor_main">
+				<ul>
+					<li><a href="./fangdajing.html"><img src="./img/floor/fl3_1.jpg" alt=""></a></li>
+					<li><a href="./fangdajing.html"><img src="./img/floor/fl3_2.jpg" alt=""></a></li>
+					<li><a href="./fangdajing.html"><img src="./img/floor/fl3_5.jpg" alt=""></a></li>
+					<li><a href="./fangdajing.html"><img src="./img/floor/fl3_6.jpg" alt=""></a></li>
+					<li class='wide'><a href="./fangdajing.html"><img src="./img/floor/fl3_4.jpg" alt=""></a></li>
+					<li class='wide'><a href="./fangdajing.html"><img src="./img/floor/fl3_3.jpg" alt=""></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="floor1 fl7 floor" id='fl7'>
+		<div class="floor_title">
+			<h2><a href="./fangdajing.html"><i>F7</i>乳品糕点</a></h2>
+			<span class='keyword'>
+				<a href="./fangdajing.html">味全乳品</a>
+				<a href="./fangdajing.html">精选蛋糕</a>
+				<a href="./fangdajing.html">美味面包</a>
+			</span>
+		</div>
+		<div class="floor_con">
+			<div class="floor_side">
+				<a href="./fangdajing.html"><img src="./img/floor/floor7.jpg" alt=""></a>
+			</div>
+			<div class="floor_main">
+				<ul>
+					<li class='wide'><a href="./fangdajing.html"><img src="./img/floor/fl1_3.jpg" alt=""></a></li>
+					<li><a href="./fangdajing.html"><img src="./img/floor/fl1_1.jpg" alt=""></a></li>
+					<li><a href="./fangdajing.html"><img src="./img/floor/fl1_2.jpg" alt=""></a></li>
+					<li><a href="./fangdajing.html"><img src="./img/floor/fl1_5.jpg" alt=""></a></li>
+					<li><a href="./fangdajing.html"><img src="./img/floor/fl1_6.jpg" alt=""></a></li>
+					<li class='wide'><a href="./fangdajing.html"><img src="./img/floor/fl1_4.jpg" alt=""></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="floor1 fl8 floor" id='fl8'>
+		<div class="floor_title">
+			<h2><a href="./fangdajing.html"><i>F8</i>饮料酒水</a></h2>
+			<span class='keyword'>
+				<a href="./fangdajing.html">饮用水</a>
+				<a href="./fangdajing.html">果汁</a>
+				<a href="./fangdajing.html">白葡萄酒</a>
+			</span>
+		</div>
+		<div class="floor_con">
+			<div class="floor_side">
+				<a href="./fangdajing.html"><img src="./img/floor/floor8.jpg" alt=""></a>
+			</div>
+			<div class="floor_main">
+				<ul>
+					<li><a href="./fangdajing.html"><img src="./img/floor/fl2_1.jpg" alt=""></a></li>
+					<li><a href="./fangdajing.html"><img src="./img/floor/fl2_2.jpg" alt=""></a></li>
+					<li class='wide'><a href="./fangdajing.html"><img src="./img/floor/fl2_3.jpg" alt=""></a></li>
+					<li class='wide'><a href="./fangdajing.html"><img src="./img/floor/fl2_4.jpg" alt=""></a></li>
+					<li><a href="./fangdajing.html"><img src="./img/floor/fl2_5.jpg" alt=""></a></li>
+					<li><a href="./fangdajing.html"><img src="./img/floor/fl2_6.jpg" alt=""></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="floor1 fl9 floor" id='fl9'>
+		<div class="floor_title">
+			<h2><a href="./fangdajing.html"><i>F9</i>方便速食</a></h2>
+			<span class='keyword'>
+				<a href="./fangdajing.html">港式面点</a>
+				<a href="./fangdajing.html">湾仔码头</a>
+				<a href="./fangdajing.html">龙凤</a>
+			</span>
+		</div>
+		<div class="floor_con">
+			<div class="floor_side">
+				<a href="./fangdajing.html"><img src="./img/floor/floor9.jpg" alt=""></a>
+			</div>
+			<div class="floor_main">
+				<ul>
+					<li><a href="./fangdajing.html"><img src="./img/floor/fl3_1.jpg" alt=""></a></li>
+					<li><a href="./fangdajing.html"><img src="./img/floor/fl3_2.jpg" alt=""></a></li>
+					<li class='wide'><a href="./fangdajing.html"><img src="./img/floor/fl3_3.jpg" alt=""></a></li>
+					<li><a href="./fangdajing.html"><img src="./img/floor/fl3_5.jpg" alt=""></a></li>
+					<li><a href="./fangdajing.html"><img src="./img/floor/fl3_6.jpg" alt=""></a></li>
+					<li class='wide'><a href="./fangdajing.html"><img src="./img/floor/fl3_4.jpg" alt=""></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+<!-- 底部 -->
+	<div class="service">
+		<div class="sv">
+			<ul>
+				<li class='s1'><b>全球精选</b><span>一站式生鲜购物方案</span></li>
+				<li class='s2'><b>多仓直发</b><span>次日达配送服务</span></li>
+				<li class='s3'><b>品质严选</b><span>精选正宗品质好食材</span></li>
+				<li class='s4'><b>天天低价</b><span>会员专属优惠购不停</span></li>
+			</ul>
+		</div>
+	</div>
+	<div class="footer">
+		<div class="inner_footer">
+			<dl class="col1">
+				<dt>新手指南</dt>
+				<dd>
+					<p><a href="./fangdajing.html">账户注册</a></p>
+					<p><a href="./fangdajing.html">购物流程</a></p>
+					<p><a href="./fangdajing.html">订购方式</a></p>
+					<p><a href="./fangdajing.html">悠币说明</a></p>
+					<p><a href="./fangdajing.html">会员等级</a></p>
+				</dd>
+			</dl>
+			<dl class="col2">
+					<dt>付款方式</dt>
+					<dd>
+						<p><a href="./fangdajing.html">账户注册</a></p>
+						<p><a href="./fangdajing.html">购物流程</a></p>
+						<p><a href="./fangdajing.html">订购方式</a></p>
+						<p><a href="./fangdajing.html">悠币说明</a></p>
+						<p><a href="./fangdajing.html">会员等级</a></p>
+					</dd>
+			</dl>
+			<dl class="col3">
+					<dt>配送方式</dt>
+					<dd>
+						<p><a href="./fangdajing.html">账户注册</a></p>
+						<p><a href="./fangdajing.html">购物流程</a></p>
+						<p><a href="./fangdajing.html">订购方式</a></p>
+						<p><a href="./fangdajing.html">悠币说明</a></p>
+						<p><a href="./fangdajing.html">会员等级</a></p>
+					</dd>
+			</dl>
+			<dl class="col4">
+					<dt>售后服务</dt>
+					<dd>
+						<p><a href="./fangdajing.html">账户注册</a></p>
+						<p><a href="./fangdajing.html">购物流程</a></p>
+						<p><a href="./fangdajing.html">订购方式</a></p>
+						<p><a href="./fangdajing.html">悠币说明</a></p>
+						<p><a href="./fangdajing.html">会员等级</a></p>
+					</dd>
+			</dl>
+			<dl class="col5">
+					<dt>关于我们</dt>
+					<dd>
+						<p><a href="./fangdajing.html">账户注册</a></p>
+						<p><a href="./fangdajing.html">购物流程</a></p>
+						<p><a href="./fangdajing.html">订购方式</a></p>
+						<p><a href="./fangdajing.html">悠币说明</a></p>
+						<p><a href="./fangdajing.html">会员等级</a></p>
+					</dd>
+			</dl>
+			<div class="rexian">
+				<span>客服热线 400-000-7788 企业采购或团购，请转2号键咨询</span>
+				<span>周一至周日 9:00-21:00</span>
+			</div>
+			<div class="copyright">
+				<p>所有图片均受著作权保护，未经许可任何单位与个人不得使用、复制、转载、摘编，违者必究法律责任。</p>
+				<p><a href="./fangdajing.html">沪ICP备09008015号 </a><a href="./fangdajing.html">  Copyright © 2005-2018 </a><a href="./fangdajing.html">上海易果电子商务有限公司</a>版权所有</p>
+				<p class='renzheng'>
+					<a href="./fangdajing.html"><img src="./img/xfwq.png" alt=""></a>
+					<a href="./fangdajing.html"><img src="./img/wgdjp.png" height='47px' alt=""></a>
+					<a href="./fangdajing.html"><img src="./img/shgs.gif" alt=""></a>
+					<a href="./fangdajing.html">
+						<img src="./img/ghs.png" alt="">
+						<span style="float: left; height: 20px; line-height: 20px; margin: 0px 0px 0px 5px; color: #939393;">沪公网安备 31010502000002号</span>
+					</a>
+				</p>
+			</div>
+		</div>
+	</div>
+<!-- 返回顶部与客服 -->
+	<div class="back">
+			<a href="javascript:;" class='kf1'></a>
+			<a href="javascript:;" class='kf2'></a>
+	</div>
+</body>
+</html>
+		<script src='yiguo.js'></script>
+	<!-- <script src="http://g.alicdn.com/sj/lib/jquery.min.js"></script> -->
